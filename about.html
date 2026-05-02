@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Reflex | Reflex Interiors & Construction</title>
+    <meta name="description" content="Learn more about Reflex Interiors & Construction, specialising in high-quality retail, leisure and commercial fit-outs for the world's leading brands.">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <style>
+        .page-header {
+            padding: 12rem 5% 4rem;
+            text-align: center;
+        }
+        
+        .page-title {
+            margin-bottom: 2rem;
+        }
+        
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            padding-bottom: 8rem;
+        }
+        
+        @media (min-width: 992px) {
+            .about-layout {
+                grid-template-columns: 5fr 7fr;
+                gap: 6rem;
+                align-items: start;
+            }
+        }
+        
+        .about-text {
+            max-width: 65ch;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 992px) {
+            .about-text {
+                margin: 0;
+                padding-top: 4rem;
+                position: sticky;
+                top: 8rem;
+            }
+        }
+        
+        .drop-cap::first-letter {
+            font-family: var(--font-heading);
+            font-size: 5rem;
+            line-height: 0.8;
+            float: left;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            color: var(--accent-color);
+        }
+        
+        .about-text p {
+            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+        
+        .about-images {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+        
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(20%);
+            transition: filter var(--transition-smooth), transform var(--transition-smooth);
+        }
+        
+        .img-wrapper:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+        
+        .img-offset-right {
+            margin-left: 20%;
+        }
+        
+        .img-offset-left {
+            margin-right: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/Reflex Logo.jpg" alt="Reflex Logo">
+        </a>
+        
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header container reveal">
+        <h1 class="page-title">About Reflex</h1>
+    </header>
+
+    <main class="container about-layout">
+        <div class="about-text reveal stagger-1">
+            <p class="drop-cap">
+                Reflex specialise in quality interior fitting-out construction activities offering a personalised and responsive service to meet the complex demands of customers who have Retail, Leisure and Commercial developments. Reflex is an organisation designed to provide a whole range of expertise at the highest level tailored to respond to the needs of the customer.
+            </p>
+            <p>
+                Constructing new build and refurbishment fitting-out works, developing detail from your design or our concepts.
+            </p>
+            <p>
+                Reflex has extensive experience in the resolution of design and construction bringing unique and immediate benefits to your project. Reflex has the support of carefully selected design consultants, specialist services and trade contractors and suppliers whose approach, skills and knowledge ensure a successful outcome to each project undertaken.
+            </p>
+            <p>
+                We have a very high end client list including but not limited to Prada, Armani, Versace, Furla, Brioni, Chloé, Céline, Alaïa, La Perla and Harrods. Reflex specialises in department store and shopping centre installations, being an approved contractor in Harrods and working in other stores such as Selfridges, Harvey Nichols and House of Fraser. We frequently work in Bicester Village and have good working knowledge of Westfield and Bluewater.
+            </p>
+        </div>
+        
+        <div class="about-images">
+            <div class="img-wrapper img-offset-right reveal stagger-2">
+                <img src="assets/high_res/Commercial_10.jpg" alt="Reflex Interior Project 1">
+            </div>
+            <div class="img-wrapper img-offset-left reveal">
+                <img src="assets/high_res/Commercial_20.jpg" alt="Reflex Interior Project 2">
+            </div>
+            <div class="img-wrapper img-offset-right reveal">
+                <img src="assets/high_res/Commercial_30.jpg" alt="Reflex Interior Project 3">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <a href="index.html" class="footer-logo">
+                <img src="assets/Logo.png" alt="Reflex Logo">
+            </a>
+            <div class="footer-copy">
+                &copy; 2026 Reflex Interiors & Construction. All rights reserved.
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:enquiries@reflex4.co.uk">enquiries@reflex4.co.uk</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

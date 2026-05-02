@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex Interiors & Construction | Luxury Fit-Out</title>
+    <meta name="description" content="Reflex specialise in quality interior fitting-out construction, offering a personalised and responsive service for Retail, Leisure and Commercial developments.">
+    <link rel="stylesheet" href="styles.css?v=9">
+    <style>
+        .hero {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%; /* for parallax */
+            z-index: -1;
+            background-color: var(--bg-color);
+        }
+        
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(14, 14, 14, 0.55);
+            z-index: 1;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: center;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            padding: 0 5%;
+            width: 100%;
+        }
+        
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.8rem, 4vw, 3.5rem);
+            font-weight: 500;
+            color: var(--text-color);
+            line-height: 1.4;
+            letter-spacing: 0.05em;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        }
+        
+        .intro-section {
+            padding: 10rem 5%;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .intro-text {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            line-height: 1.5;
+            margin-bottom: 4rem;
+        }
+        
+        .clients-strip {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            color: rgba(245, 240, 235, 0.6);
+            margin-bottom: 5rem;
+        }
+        
+        .clients-strip span {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .clients-strip span::after {
+            content: '·';
+            color: var(--accent-color);
+        }
+        
+        .clients-strip span:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/Logo.png" alt="Reflex Logo">
+            </a>
+        </div>
+        
+        <div class="nav-menu-container">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="assets/high_res/Commercial_1.jpg" alt="Luxury Interior" class="hero-image reveal active">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal active">Crafting exceptional interiors<br>for the world's most<br>discerning brands.</h1>
+        </div>
+    </header>
+
+    <section class="intro-section container">
+        <p class="intro-text reveal">
+            Reflex specialise in quality interior fitting-out construction, offering a personalised and responsive service for Retail, Leisure and Commercial developments.
+        </p>
+        
+        <div class="clients-strip reveal stagger-1">
+            <span>PRADA</span>
+            <span>ARMANI</span>
+            <span>VERSACE</span>
+            <span>HARRODS</span>
+            <span>SELFRIDGES</span>
+            <span>HARVEY NICHOLS</span>
+            <span>FURLA</span>
+            <span>BRIONI</span>
+            <span>CHLOÉ</span>
+            <span>CÉLINE</span>
+            <span>ALAÏA</span>
+            <span>LA PERLA</span>
+        </div>
+        
+        <div class="reveal stagger-2">
+            <a href="portfolio.html" class="cta-link">View Our Work &rarr;</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <a href="index.html" class="footer-logo">
+                <img src="assets/Logo.png" alt="Reflex Logo">
+            </a>
+            <div class="footer-copy">
+                &copy; 2026 Reflex Interiors & Construction. All rights reserved.
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:enquiries@reflex4.co.uk">enquiries@reflex4.co.uk</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
